@@ -19,7 +19,7 @@ python3 -m pip install earth_rover_mini_plus_sdk
 Below is an example of how to use the code.
 
 ```python
-from earth_rover_mini_plus_sdk import api
+from earth_rover_mini_plus_sdk import API
 
 async def main():
     rover = API("192.168.11.1", 8888)
