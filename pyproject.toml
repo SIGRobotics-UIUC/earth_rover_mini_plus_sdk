@@ -6,11 +6,11 @@ build-backend = "hatchling.build"
 name = "earth_rover_mini_plus_sdk"
 version = "1.0.0"
 authors = [
-  { name="Saketh Kantipudi", email="author@example.com" },
-  { name="Hasan Al Saeedi", email="author@example.com" },
-  { name="Aarsh Mittal", email="author@example.com" },
-  { name="Somrishi Banerjee", email="author@example.com" },
-  { name="Sairaj Shetye", email="author@example.com" },
+  { name="Saketh Kantipudi", email="saketh3@illinois.edu" },
+  { name="Hasan Al Saeedi", email="halsae2@illinois.edu" },
+  { name="Aarsh Mittal", email="aarshm2@illinois.edu" },
+  { name="Somrishi Banerjee", email="sb91@illinois.edu" },
+  { name="Sairaj Shetye", email="sshetye2@illinois.edu" },
 ]
 description = "API for EarthRover Mini+. Allows interfacing and control over device through a simple interface."
 readme = "README.md"
