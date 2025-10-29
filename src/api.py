@@ -1,7 +1,5 @@
 import socket, struct, asyncio, time, contextlib, copy
 from typing import Any
-import socket, struct, asyncio, time, contextlib, copy
-from typing import Any
 from .uart_cp import (
     UCP_KEEP_ALIVE,
     UCP_MOTOR_CTL,
@@ -773,4 +771,5 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 
