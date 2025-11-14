@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "earth_rover_mini_sdk"
-version = "1.0.0"
+version = "1.0.1"
 authors = [
   { name="Saketh Kantipudi", email="saketh3@illinois.edu" },
   { name="Hasan Al Saeedi", email="halsae2@illinois.edu" },
