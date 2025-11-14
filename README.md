@@ -1,17 +1,17 @@
-# earth_rover_mini_plus_sdk
+# earth_rover_mini_sdk
 
-API for the Earth Rover Mini+. Uploaded to PyPi, installable using pip.
+API for the Earth Rover Mini. Uploaded to PyPi, installable using pip.
 
 ## Installation
 
 Windows:
 ```bash
-py -m pip install earth_rover_mini_plus_sdk
+py -m pip install earth_rover_mini_sdk
 ```
 
 Unix/MacOS:
 ```bash
-python3 -m pip install earth_rover_mini_plus_sdk
+python3 -m pip install earth_rover_mini_sdk
 ```
 
 ## Example Usage
@@ -19,19 +19,20 @@ python3 -m pip install earth_rover_mini_plus_sdk
 Below is an example of how to use the code.
 
 ```python
-from earth_rover_mini_plus_sdk import API
+from earth_rover_mini_sdk import EarthRoverMini_API
 
-async def main():
-    rover = API("192.168.11.1", 8888)
-    await rover.connect()
+def main():
+    rover = EarthRoverMini_API("192.168.11.1", 8888)
 
-    await rover.safe_ping()
-    # await rover.ctrl_packet(60, 0)
-    await asyncio.sleep(2)
-    # await rover.ctrl_packet(0, 0)
-    await rover.move(3, 60, 360)
-    await asyncio.sleep(1)
-    await rover.imu_mag_read()
+    rover.connect()
 
-    await rover.disconnect()
+    print("\n[TEST] Ping test:")
+
+    rover.safe_ping()
+
+    print("\n[TEST] Move test (3s at speed=60, angular=360):")
+
+    rover.move(1, 60, 0)
+
+    rover.disconnect()
 ```
